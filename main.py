@@ -3,7 +3,12 @@ from flask_cors import CORS
 from youtube_transcript_api import YouTubeTranscriptApi, NoTranscriptFound
 
 app = Flask(__name__)
+<<<<<<< HEAD
 CORS(app, origins=["https://revu-eight.vercel.app"])  # Replace with your Vercel app's URL
+=======
+CORS(app)  # This allows all origins
+ # Replace with your Vercel app's URL
+>>>>>>> b327662b94d924292ad29336f42c2c8211ecfbe4
 
 def fetch_transcript(video_id):
     try:
